@@ -1,32 +1,20 @@
-interface StudentConstructor {
-  firstName: string;
-  lastName: string;
-}
+/// <reference path="./crud.d.ts" />
 
-interface StudentClassInterface {
-  workOnHomework(): string;
-  displayName(): string;
-}
+import { RowID, RowElement } from './interface';
 
-class StudentClass implements StudentClassInterface {
-  firstName: string;
-  lastName: string;
+import * as CRUD from './crud';
 
-  constructor({ firstName, lastName }: StudentConstructor) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-  }
+const row: RowElement = {
+  firstName: 'Guillaume',
+  lastName: 'Salva',
+};
 
-  workOnHomework(): string {
-    return 'Currently working';
-  }
+const newRowID: RowID = CRUD.insertRow(row);
+console.log(`Inserted row ID: ${newRowID}`);
 
-  displayName(): string {
-    return this.firstName;
-  }
-}
+const updatedRow: RowElement = { ...row, age: 23 };
 
-const student = new StudentClass({ firstName: 'John', lastName: 'Doe' });
-console.log(student.displayName());
-console.log(student.workOnHomework());
+CRUD.updateRow(newRowID, updatedRow);
+
+CRUD.deleteRow(newRowID);
 
