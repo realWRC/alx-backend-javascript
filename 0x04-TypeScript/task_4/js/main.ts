@@ -1,14 +1,29 @@
-interface StudentConstructor {
+import { Cpp } from './subjects/Cpp';
+import { Java } from './subjects/Java';
+import { React } from './subjects/React';
+import { Teacher } from './subjects/Teacher';
+
+export const cpp = new Cpp();
+export const java = new Java();
+export const react = new React();
+
+export const cTeacher: Teacher = {
+  firstName: 'John',
+  lastName: 'Doe',
+  experienceTeachingC: 10,
+};
+
+export interface StudentConstructor {
   firstName: string;
   lastName: string;
 }
 
-interface StudentClassInterface {
+export interface StudentClassInterface {
   workOnHomework(): string;
   displayName(): string;
 }
 
-class StudentClass implements StudentClassInterface {
+export class StudentClass implements StudentClassInterface {
   firstName: string;
   lastName: string;
 
@@ -25,8 +40,3 @@ class StudentClass implements StudentClassInterface {
     return this.firstName;
   }
 }
-
-const student = new StudentClass({ firstName: 'John', lastName: 'Doe' });
-console.log(student.displayName());
-console.log(student.workOnHomework());
-
