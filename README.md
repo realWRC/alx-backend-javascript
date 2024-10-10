@@ -4,3 +4,4 @@ A program meant to teach backend Javascript to ALX students using node. The modu
 - 0x01. ES6 Promises
 - 0x02. ES6 classes
 - 0x03. ES6 data manipulation
+- 0x04. Typescript
