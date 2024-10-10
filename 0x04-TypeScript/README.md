@@ -22,6 +22,10 @@ At the end of this project, you are expected to be able to explain to anyone:
 - The Typescript compiler should not show any warning or error when compiling your code
 
 ### Configuration Files
+NodeJs:
+``````
+v18.20.4
+``````
 package.json:
 ``````
 {
