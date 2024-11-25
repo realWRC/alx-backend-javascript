@@ -5,3 +5,4 @@ A program meant to teach backend Javascript to ALX students using node. The modu
 - 0x02. ES6 classes
 - 0x03. ES6 data manipulation
 - 0x04. Typescript
+- 0x05. NodeJS Basics
