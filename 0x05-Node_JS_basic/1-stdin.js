@@ -7,6 +7,9 @@ process.stdin.setEncoding('utf8');
 process.stdin.on('data', (input) => {
   const name = input.trim();
   console.log(`Your name is: ${name}`);
+  if (process.stdin.isTTY) {
+    process.exit(0);
+  }
 });
 
 process.stdin.on('end', () => {
