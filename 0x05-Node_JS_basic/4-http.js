@@ -1,6 +1,6 @@
 // A simple HTTP server in node
 
-const http = require("http");
+const http = require('http');
 
 const host = 'localhost';
 const port = 1245;
