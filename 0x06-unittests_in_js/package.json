@@ -5,7 +5,8 @@
     "test": "mocha"
   },
   "devDependencies": {
-    "mocha": "^10.8.2"
+    "mocha": "^10.8.2",
+    "chai": "^4.3.7"
   },
   "author": "Wongani Chulu",
   "license": "ISC"

@@ -18,7 +18,7 @@ describe('calculateNumber', function () {
   describe('SUBTRACT', function () {
     it('should return the difference of rounded numbers', function () {
       expect(calculateNumber('SUBTRACT', 1.4, 4.5)).to.equal(-4);
-      expect(calculateNumber('SUBTRACT', 4.5, 1.4)).to.equal(5); // Corrected from previous test
+      expect(calculateNumber('SUBTRACT', 4.5, 1.4)).to.equal(4);
       expect(calculateNumber('SUBTRACT', -1.2, -3.7)).to.equal(3);
       expect(calculateNumber('SUBTRACT', 0, 0)).to.equal(0);
       expect(calculateNumber('SUBTRACT', 1.5, 3.7)).to.equal(-2);
