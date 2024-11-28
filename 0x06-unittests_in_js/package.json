@@ -4,6 +4,9 @@
   "scripts": {
     "test": "mocha"
   },
+  "devDependencies": {
+    "mocha": "^10.8.2"
+  },
   "author": "Wongani Chulu",
   "license": "ISC"
 }
